@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage":"https://amar-husika.github.io/javascript-calculator",
   "scripts": {
     "start": "webpack-dev-server --mode=development --open --hot",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "webpack --mode=production"
   },
   "keywords": [],
@@ -21,6 +24,7 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^4.3.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
